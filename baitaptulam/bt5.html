@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function checkarr(){
+  let a = prompt('nhap chuoi 1');
+  let arr1 = a.split(' ');
+  let b = prompt('nhap chuoi 2');
+  let arr2 = b.split(' ');
+  let result;
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1.length !== arr2.length || arr1[i] !== arr2[i]) {
+      result = 'False';
+    } if (arr1[i] === arr2[i]) {
+      result = 'True';
+    }
+  }
+    console.log(result);
+  }
+checkarr()
+</script>
+
+</body>
+</html>

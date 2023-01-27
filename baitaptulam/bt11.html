@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function checkarr() {
+    let input = prompt('nhap so');
+    let arr = input.split(' ');
+    let Y = +prompt('nhap Y');
+    for (let i = 0; i < arr.length; i++) {
+      if (Y == arr[i]) {
+        arr.splice(i, 1);
+        arr.push('0')
+        console.log(arr);
+      }
+    }
+  }
+  checkarr()
+</script>
+</body>
+</html>

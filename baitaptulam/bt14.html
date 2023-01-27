@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function compareTriplets(a, b) {
+        let score = [0, 0];
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] > b[i]) {
+                score[0]++;
+            } if (a[i] < b[i]) {
+                score[1]++;
+            }
+        } return score;
+        console.log(score);
+    }
+
+    let a = [99, 1, 99];
+    let b = [4, 2, 4];
+    compareTriplets(a,b)
+</script>
+</body>
+</html>

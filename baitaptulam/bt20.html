@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function birthdayCakeCandles(candles) {
+        candles.sort((a, b) => b - a);
+        let count = 0;
+        let taller = candles[0];
+        for (let i = 0; i < candles.length; i++) {
+            if (candles[i] > taller) {
+                taller = candles[i];
+            }
+        }
+            for (let i = 0; i < candles.length; i++) {
+                if (candles[i] === taller) {
+                    count++;
+                }
+            }
+        return count;
+
+    }
+    let candles = [4,4,3,1];
+    console.log(birthdayCakeCandles(candles));
+</script>
+</body>
+</html>
