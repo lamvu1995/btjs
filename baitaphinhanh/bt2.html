@@ -1,0 +1,38 @@
+<html>
+<head><title> Move Image </title>
+
+    <style type="text/css">
+        #kids { position: relative; top: 200px; left: 400px; }
+    </style>
+
+    <script type="text/javascript">
+
+        function moveIt()
+        {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+
+            var kids = document.getElementById("kids").style;
+
+            kids.top = x + "px";
+            kids.left = y  + "px";
+
+        }
+
+    </script>
+</head>
+<body>
+
+<form>
+    X axis: <input type="text" id="x"><br />
+    Y axis: <input type="text" id="y"><br />
+    <input type="button" value=" Move " onclick="moveIt()" >
+</form>
+
+<div id="kids">
+    <img src=https://gine.vn/wp-content/uploads/2021/11/tao-hinh-sang-trong-cua-nhan-vat-Tommy-Shelby-trong-Peaky-Blinder.jpg id='i1'
+         style="position:absolute; left: 500px; top: 30px; width: 10%">
+</div>
+
+</body>
+</html>

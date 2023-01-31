@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function plus(n) {
+    let y = 1;
+    for (let i = n; i > 0 ; i--) {
+      y *= i;
+    }
+    let x = y;
+    document.write(x + "<br>");             // this calls valueOf
+    document.write(x.valueOf() + "<br>");
+    document.write(x.toString() + "<br>");
+  }
+  let n = 30;
+  console.log(plus(n))
+</script>
+</body>
+</html>
